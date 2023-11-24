@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin</title>
+<link href="style.css" rel="stylesheet">
+<link href="margin.css" rel="stylesheet">
+</head>
+<body>
+	<h1>margin - 요소의 바깥 여백</h1>
+	
+	<h2>1. margin의 방향별 지정법</h2>
+	<ul>
+		<li>margin-top:n; 위쪽만 적용</li>
+		<li>margin-right:n; 우측만 적용</li>
+		<li>margin-bottom:n; 아래쪽만 적용</li>
+		<li>margin-left:n; 좌측만 적용</li>
+	</ul>
+	<h2>2. margin의 값 갯수별 지정법</h2>
+	<ul>
+		<li>margin-:n; 양사방 동일하게 적용</li>
+		<li>margin-:n n; 상하와 좌우가 서로 동일하게 적용</li>
+		<li>margin-:n n n; 상, 좌우, 하 순으로 적용</li>
+		<li>margin-:n n n n; 상,우,하,좌 순으로 적용</li>
+	</ul>
+	<section id="sec01">
+		<h2>1. margin의 방향별 지정법</h2>
+		<div class="mt">div01(margin-top: 50px;)</div>
+		<div class="mr">div02(margin-right: 50px;)</div>
+		<div class="mb">div03(margin-bottom: 50px;)</div>
+		<div class="ml">div04(margin-left: 50px;)</div>
+	</section>
+	
+	<section id="sec02">
+		<h2>2. margin의 값 갯수별 지정법</h2>
+		<div class="mn01">div01(margin:2em;)</div>
+		<div class="mn02">div02(margin:2em 4em;)</div>
+		<div class="mn03">div03(margin:2em 4em 1em;)</div>
+		<div class="mn04">div04(margin:3em 20% 7em 10%;)</div>
+		
+		<div class="cnt">center<br>
+			항상 수평 정중앙에 위치하는 요소 정렬<br>
+			margin: n <b>auto</b>;
+		</div>
+	</section>
+	<section id="sec03">
+		<h2>inline요소에서의 margin 적용</h2>
+		<a href="#">a tag</a>
+		<b>b tag</b>
+		<span>span tag</span>
+		인접한 좌우 요소끼리는 더하기,상하는 적용 불가
+		
+		<form action="t.jsp">
+			<label for="id">id</label>
+			<input type="text" id="id"><br>
+			<label for="passwd">password</label>
+			<input type="text" id="passwd"><br>
+			
+			<input type="submit" value="login" id="sbm">
+		</form>
+		
+	</section>
+</body>
+</html>

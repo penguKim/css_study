@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/*
+그룹 선택자
+쉼표(,)로 선택자들을 구분하여 동시에 다수 지정이 가능하며,
+선택자의 종류는 서로 달라도 된다.
+*/
+.ta01, .ta02, .ta03 {
+	border: 1px solid;
+	width: 300px;
+}
+
+
+/* 1. text-align: ; 글자 수평 정렬 */
+.ta01 {text-align: left;}
+.ta02 {text-align: center;}
+.ta03 {text-align: right;}
+.ta04 {text-align: justify;}
+
+#id {text-align: center;}
+#nm {text-align: right;}
+
+.tr {text-align: right}
+
+/* 2. text-decoration: ; 글자의 줄들 */
+.td01 {text-decoration: overline;}
+.td02 {text-decoration: line-through;}
+.td03 {text-decoration: underline;}
+.td04 {text-decoration: blink;}
+/* 
+상태선택자
+
+선택자:hover 
+- 마우스오버 상태일 때 적용
+
+*/
+.td04:hover {
+	background-color:#3dc;
+	text-decoration: underline;
+}
+
+.s01 {
+	text-decoration: line-through;
+	font-size: 14px;
+	color: #666;
+}
+
+.s02 {
+	border: 3px dotted;
+	background-color:#f00;
+	border-radius:50%; /* 모서리 라운딩 */
+	padding:3px;
+	vertical-align: super; /* 윗첨자 효과 */
+	text-transform:capitalize;
+	font-family:cursive;
+	font-style:italic;
+	font-size: 12px;
+	color: #ff0;
+}
+
+.s03 {
+	font-size: 26px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #06d;
+}
+
+/* 3. text-indent: ; 글자 들여쓰기 */
+.ti01 {text-indent: 10px;}
+.ti02 {text-indent: 1em;}
+.ti03 {text-indent: 10%;}
+.ti04 {text-indent: -150px;}
+.ti04:hover {
+	text-indent: 0;
+}
+
+/* 4. text-transform: ; (영문)대소문자 변경 */
+.tt01 {text-transform: none;}
+.tt02 {text-transform: lowercase;}
+.tt03 {text-transform: uppercase;}
+.tt04 {text-transform: capitalize;}
+
+
+/* 5. text-shadow: ; 글자의 그림자 */
+/* 선택자에서는 띄어쓰기도 의미를 가지고있어 붙여쓰자  */
+
+#sec05>div {
+	/* pre 태그처럼 공백을 그대로 표시 */
+	white-space: pre;
+}
+
+#sec05>p {
+	padding: 20px;
+	text-align:center;
+	font-size: 45px;
+	font-weight: bold;	
+} 
+	
+.ts01 {text-shadow: 2px 3px 4px #333;} /* 가로 세로 크기 색상 */
+.ts02 {text-shadow: -2px -3px 4px #333;}
+.ts03 {
+	text-shadow: 0 0 10px #333;
+	color: #fff;
+}
+.ts03:hover {
+	text-shadow: 0 0 0 #fff;
+	transition: 1.4s; /* 시간 설정 */
+}
+.ts03_1 {text-shadow: 0 45px 0 #366; }
+.ts03_2 {
+	text-shadow: 0 0 2px #333; 
+	color: #fff;
+}
+.ts03_3 {
+	text-shadow: 0 0 10px #3dc;
+	
+}
+.ts04, .ts05, .ts06, .ts07 {
+	background-color: #000;
+	color: #000;
+}
+.ts04 {text-shadow: 0 0 12px #3dc;}
+.ts05:hover {
+	text-shadow: 0 0 10px #f34;	
+	transition: 1.4s;
+}
+.ts06 {
+	text-shadow: 2px 2px 8px #f4a,
+		-2px -2px 8px #4af;
+}
+.ts07 {
+	text-shadow: -3px -3px 8px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+

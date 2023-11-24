@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+body {
+	/* 배경이미지 다중 지정 가능 */
+	background-image: url("img/code.jpg"), url("img/milkyway.jpg");
+	/* 가로로 반복; */
+/* 	background-repeat: repeat-x */ 
+	/* 세로로 반복 */
+/*	background-repeat: repeat-y; */ 
+	/* 반복 안함 */
+/* 	background-repeat: no-repeat; */
+	/* 배경 이미지 순서대로 지정 가능 */
+	background-repeat: no-repeat, repeat-x;
+	
+	
+	/* 한 장으로 배경채우기, 영역 범위로 채움*/
+/* 	background-size: cover;  */
+	/* 화면에 맞춰서 배경채우기, 사진 크기로 채움 */
+/* 	background-size: contain;  */
+	/* %로 크기 지정도 가능하며, 다른 단위도 섞어서 사용 가능 */
+/* 	background-size: 50% 50%";  */
+/* 	background-position: cover; */
+	/* 왼쪽 위 시작지점을 기준으로 위치 조절*/
+/* 	background-position: 100px, 100px; */
+	/* 배경 이미지 순서대로 지정 가능 */
+	background-position: 50% 0, 0 100%;
+
+	/* 스크롤 시 배경이미지 고정 */
+	background-attachment: scroll, fixed;
+}
+
+.bg {
+	background-color: #ccc;
+	border-radius: 10px;
+	margin: 5em 2em;
+	padding: 2.5em;
+}
+
+#hn-bg {
+	border-bottom: 5px solid;
+	background-color: #acf;
+	color:#036;
+	margin-bottom:3em;
+	padding: 0.5em;
+}
+
+li {
+	font-size: 18px;
+	line-height: 1.8; /* 줄간격 */
+}
+
+ul>li {
+	margin-bottom: 2em;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+ul>li>ol {
+	font-weight: normal;
+}
+	
+#sec01 {background-color: #fff;}
+
+#sec01>p {
+	border: 1px solid #d00;
+	width: 30%;
+	height: 400px;
+	display: inline-block;
+	margin-right: 1.5%;
+	padding: 0.5em;
+	overflow: auto;
+	background-image: url("img/car.jpg");
+	background-size: cover;
+	background-position: center top;
+}
+
+.ba01 {
+	background-attachment: scroll;
+}
+.ba02 {
+	background-attachment: fixed;
+}
+.ba03 {
+	background-attachment: local;
+}
+

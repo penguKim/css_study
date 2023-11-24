@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+section>div {
+	border: 1px solid;
+}
+
+section>i {
+	font-style: normal;
+	color: #830;
+}
+
+/* 1. position:static; */
+#sec01>div {
+	position: static;
+	left: 1000px
+}
+
+/* 2. position:relative; */
+#sec02>div {
+	width: 200px;
+}
+
+.re01 {
+	position: relative;
+	left: 1000px;
+}
+
+.re02 {
+	position: relative;
+	right: 1000px;
+}
+
+.re03 {
+	position: relative;
+	top:250px;
+}
+
+.re04 {
+	position: relative;
+	bottom: 250px;
+}
+
+.re05 {
+	position: relative;
+	left: 30em;
+	bottom: 5em;
+}
+
+.re06 {
+	position: relative;
+	top: 100px;
+	left: 600px;
+}
+
+#sec02:hover>div {
+	position: static;
+}
+
+/* 3. position:absolute; */
+/* 
+상위 요소는 기준이 되기 위하여 relative로 변경한다.
+기본값인 static은 위치 변경이 불가능하기 때문이다.
+ */
+#sec03 {
+	position: relative;
+	height: 500px;
+}
+
+#sec03>div {
+	width: 200px;
+	height: 30px;
+}
+
+.ab01 {
+	position: absolute;
+	left: 1000px;
+}
+
+.ab02 {
+	/* 
+	상위 요소의 범위를 기준으로 움직이며 absolute만 지정시
+	아래의 요소와 겹쳐진다.
+	 */
+	position: absolute;
+	right: 1000px;
+}
+
+.ab03 {
+	position: absolute;
+	top: 20px;
+}
+
+.ab04 {
+	position: absolute;
+	bottom: 100px;
+}
+
+.ab05 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.ab06 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+#sec03>aside {
+	background-color: #000;
+	width: 800px;
+	height: 400px;
+	margin-top: 50px;
+	position: relative;
+}
+
+#sec03>aside>div {
+	border: 1px solid;
+	width: 100px;
+	height: 120px;
+	color: #fff;
+	border-radius: 14px;
+/* 	상위 요소 기준으로 위치가 정해져 한곳으로 모이게 된다. */
+	position: absolute;
+	/* 테두리의 두께까지 계산해서 두께가 정해진다. */
+	box-sizing: border-box;
+	padding: 6px;
+	text-transform: capitalize;
+}
+
+.cd01 {
+	background-color: #a50;
+	top: 100px;
+	left: 200px;
+	/* 요소의 z축을 지정한다. */
+	z-index: 50;
+}
+
+.cd02 {
+	background-color: #0a5;
+	top: 110px;
+	left: 240px;
+	z-index: 49;
+}
+
+.cd03 {
+	background-color: #a05;
+	top: 120px;
+	left: 280px;
+	z-index: 48;
+}
+
+.cd04 {
+	background-color: #05a;
+	top: 130px;
+	left: 320px;
+	z-index: 47;
+}
+
+#sec03>aside:hover>.cd02 {
+	top: 100px;
+	left: 300px;
+	transition: 1s;
+}
+#sec03>aside:hover>.cd03 {
+	top: 100px;
+	left: 400px;
+	transition: 1s;
+}
+#sec03>aside:hover>.cd04 {
+	top: 100px;
+	left: 500px;
+	transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

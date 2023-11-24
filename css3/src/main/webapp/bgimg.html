@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>background-image</title>
+<link href="style.css" rel="styleSheet">
+<link href="bgimg.css" rel="styleSheet">
+</head>
+<body>
+	<h1>background - 배경</h1>
+	<ol class="bg">
+		<li>background-color:color값 ; 배경색상</li>
+		<li>background-image:url("이미지경로"); 배경 이미지</li>
+	</ol>
+	
+	<div class="bg">
+		<h3>background-image 2개 지정</h3>
+		<p>
+		background-image:url("이미지-1경로"), url("이미지-2경로");<br>
+		(기타 세부속성들도 따로 지정하려면 ,를 추가
+		background-repeat:repeat, no-repeat ; ) </p>
+	</div>
+	<h2 id="hn-bg">background-image의 속성들</h2>
+	<ul>
+		<li>background-repeat: ; 반복
+			<ol>
+				<li>repeat : 기본값</li>			
+				<li>repeat-x : 가로 방향으로 반복</li>			
+				<li>repeat-y : 세로 방향으로 반복</li>			
+				<li>no-repeat : 반복 안함</li>			
+			</ol>
+		</li>
+		<li>background-size: ; 크기
+			<ol>
+				<li>cover : 지정한 요소를 다 덮도록 배경이미지를 확대/축소</li>
+				<li>contain : 지정한 요소 안에 배경 이미지가 다 들어오도록 이미지를 확대/축소</li>
+				<li>Xn Yn : 너비 값과 높이 값을 지정</li>
+			</ol>
+		</li>
+		<li>background-position: ; 위치
+			<ol>
+				<li>left/center/right top/center/bottom : 수평 수직 지정</li>
+				<li>Xn Yn : 너비 값과 높이 값을 지정</li>
+			</ol>
+		</li>
+		<li>background-attachment: ; 스크롤 여부
+			<ol>
+				<li>scroll : 해당 영역의 이미지 고정</li>
+				<li>fixed : 전체 영역에서 이미지 고정</li>
+				<li>local : 내용을 스크롤하면 배경 이미지도 스크롤</li>
+			</ol>
+		</li>
+	</ul>
+	
+	<section id="sec01">
+		<h2>background-attachment: ; 스크롤 여부</h2>
+		<div>
+			[ 특정영역에 스크롤바 생성시 ]<br>
+			scroll (기본) 자신 영역에는 고정, 브라우저에는 스크롤.<br>
+			fixed  자신 영역과 브라우저 모두 고정.<br>
+			local  자신 영역과 브라우저 모두 스크롤.
+		</div>
+		<p class="ba01"><b>scroll 스크롤</b>
+			<br><br><br><br><br><b>scroll 스크롤</b>
+			<br><br><br><br><br><b>scroll 스크롤</b>
+			<br><br><br><br><br><b>scroll 스크롤</b>
+			<br><br><br><br><br><b>scroll 스크롤</b>
+			<br><br><br><br><br><b>scroll 스크롤</b>
+			<br><br><br><br><br><b>scroll 스크롤</b>		
+		</p>
+		<p class="ba02"><b>fixed 고정</b>
+			<br><br><br><br><br><br><b>fixed 고정</b>
+			<br><br><br><br><br><br><b>fixed 고정</b>
+			<br><br><br><br><br><br><b>fixed 고정</b>
+			<br><br><br><br><br><br><b>fixed 고정</b>
+			<br><br><br><br><br><br><b>fixed 고정</b>
+			<br><br><br><br><br><br><b>fixed 고정</b>
+		</p>
+		<p class="ba03"><b>local</b>
+			<br><br><br><br><br><br><b>local</b>
+			<br><br><br><br><br><br><b>local</b>
+			<br><br><br><br><br><br><b>local</b>
+			<br><br><br><br><br><br><b>local</b>
+			<br><br><br><br><br><br><b>local</b>
+			<br><br><br><br><br><br><b>local</b>
+		</p>
+	</section>
+	
+	
+	
+	
+</body>
+</html>

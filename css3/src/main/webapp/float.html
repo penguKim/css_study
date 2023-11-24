@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float - 요소를 띄움</title>
+<link href="style.css" rel="stylesheet">
+<link href="float.css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul id="flmn-01">
+			<li><a href="#sec01">section-01</a></li>
+			<li><a href="#sec02">section-02</a></li>
+			<li><a href="#sec03">section-03</a></li>
+			<li><a href="#sec04">section-04</a></li>
+		</ul>
+	</nav>
+	<div class="clear"><!-- clear:both 용 div 태그 --></div>
+	<nav>
+		<ul id="flmn-02">
+			<li><a href="#sec01">section-01</a></li>
+			<li><a href="#sec02">section-02</a></li>
+			<li><a href="#sec03">section-03</a></li>
+			<li><a href="#sec04">section-04</a></li>
+		</ul>
+	</nav>
+	<h1 class="clear">float - 요소를 띄움</h1>
+	<h3> </h3>
+	<ul>
+		<li id="fl">float:left; 띄워서 좌측에 배치</li>
+		<li id="fr">float:right; 띄워서 우측에 배치</li>
+	</ul>
+	
+	<h1 class="clear">clear:both; float의 영향을 해제</h1>
+	<section id="sec01">
+		<h2>1. 이미지에 float:left; 적용</h2>
+		<p>
+			<img alt="pineapple" src="img/pineapple.jpg"> Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+			lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+			Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+			Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula,
+			facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a
+			lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+			sed ullamcorper ipsum dignissim ac...
+		</p>
+	</section>
+	<section id="sec02">
+		<h2>2. 이미지에 float:right; 적용</h2>
+		<p>
+			<img alt="pineapple" src="img/pineapple.jpg"> Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+			lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+			Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+			Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula,
+			facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a
+			lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+			sed ullamcorper ipsum dignissim ac...
+		</p>
+	</section>
+	<section id="sec03" class="clear">
+		<h2>3. p에 float: ; 적용</h2>
+		<p class="p01"> [p-01]
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+			egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+			nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+			vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+			eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
+			hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+			ipsum dignissim ac...
+		</p>
+		<p class="p02"> [p-02]
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+			egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+			nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+			vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+			eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
+			hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+			ipsum dignissim ac...
+		</p>
+		<p class="p03"> [p-03]
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+			egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+			nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+			vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+			eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
+			hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+			ipsum dignissim ac...
+		</p>
+		<p class="p04"> <!-- <p class="p04 clear"> -->[p-04]
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+			egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+			nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+			vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+			eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
+			hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+			ipsum dignissim ac...
+		</p>
+		<p class="p05"> [p-05]
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+			egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+			nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+			vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+			eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
+			hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+			ipsum dignissim ac...
+		</p>
+		<p class="p06"> [p-06]
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+			egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+			nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+			vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+			eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
+			hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+			ipsum dignissim ac...
+		</p>
+		<p class="p07 clear"> [p-07]
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+			egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+			nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+			vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+			eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
+			hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+			ipsum dignissim ac...
+		</p>
+		
+	</section>
+</body>
+</html>

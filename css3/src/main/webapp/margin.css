@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* 1. margin의 방향별 지정법 */
+#sec01>div {
+	border: 1px solid #040;
+}
+
+.mt {
+	margin-top: 50px;
+}
+
+.mr {
+	margin-right: 50px;
+	text-align: right;
+}
+
+.mb {
+	margin-bottom: 50px;
+}
+.ml {
+	margin-left: 50px;
+}
+
+#sec01:hover>div {
+	margin: 0;
+}
+/* 2. margin의 값 갯수별 지정법 */
+
+#sec02>div {
+	border: 1px solid #a8a;
+}
+
+.mn01 {
+	margin:2em;
+}
+
+.mn02 {
+	margin:2em 4em;
+}
+
+.mn03 {
+	margin:2em 4em 1em;
+}
+
+.mn04 {
+	margin:3em 20% 7em 10%;
+}
+
+.cnt {
+	background-color: #a80;
+	width:30%;
+	height:90px;
+/* 	margin-left:auto;
+	margin-right:auto; */
+	margin:2em auto;
+}
+
+#sec03>*:not(h2) {
+	border: 1px solid #8aa;
+	margin: 50px;
+}
+
+label {
+	width:120px;
+	display: inline-block; /* 인라인 블록으로 성격을 바꿔준다. */
+	margin-bottom: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #333;
+}
+
+/* input 태그는 예외적으로 따로 적용을 해준다. */
+input {
+	width:200px;
+}
+
+#sbm {
+	margin-left: 125px;
+	margin-top: 20px;
+}
+
+
+
+
+

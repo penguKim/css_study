@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*
+주석에 저장 후 빼서 쓰기
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: "Bagel Fat One", fantasy;
+*/
+
+/* 본문 전체에 폰트 적용하기 */
+body {font-family: "Noto Sans KR", sans-serif;}
+
+
+h1 {
+	background-color: #acf;
+	border-left: 12px solid #8ad;
+	padding: 0.3em 0.7em;
+	color: #036;
+	font-family: "Nanum Myeongjo", serif;
+}
+
+h2 {
+	font-family: "Bagel Fat One", fantasy;
+	font-weight: normal;
+}
+
+
+/* css 주석 */
+/* Ctrl + Shift + / */
+
+/* 1. font-size 글자 크기 */
+
+#sec01 {font-size: 12px;}
+
+.fs01 {font-size: 16px;}
+.fs02 {font-size: 20px;}
+.fs03 {font-size: 12px;}
+
+.fs04 {font-size: 1em;}
+.fs05 {font-size: 1.25em;}
+.fs06 {font-size: 0.75em;}
+
+.fs07 {font-size: 1rem;}
+.fs08 {font-size: 1.25rem;}
+.fs09 {font-size: 0.75rem;}
+
+/* 2. font-weight 글자 두께 */
+
+.fw01 {font-weight: 100;}
+.fw02 {font-weight: 200;}
+.fw03 {font-weight: 300;}
+.fw04 {font-weight: 400;}
+.fw05 {font-weight: 500;}
+.fw06 {font-weight: 600;}
+.fw07 {font-weight: 700;}
+.fw08 {font-weight: 800;}
+.fw09 {font-weight: 900;}
+.fw10 {
+	font-weight: bold;
+	color: #068;	
+}
+.fw11 {
+	font-weight: normal;
+	color: #00e
+}
+
+/* 3. font-style: ; 글자 기울기 */
+
+.fst01 {font-style: italic;}
+.fst02 {font-style: oblique;}
+.fst03 {font-style: normal;}
+
+/* 4. font-family:; 글꼴(서체) */
+
+.ffm01 {font-family: "Times New Roman", "Garamond", "Georgia", serif;}
+.ffm02 {font-family: "Verdana", "Arial", "Helvetica", sans-serif;}
+.ffm02 {font-family: "Courier New", "Lucida Console", "Monaco", monospace;}
+
+
+
+
+
+
+
+
+
+
+

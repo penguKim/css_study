@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/* nav */
+nav li {
+	background-color: #a00;
+	display: inline-block; /* 메뉴들을 나란히 정렬 */
+	width: 150px;
+	height: 30px;
+	/* border-radius: 값 여러개 지정시 모서리별로 적용 가능 */
+	border-radius: 10px 0;
+	text-align: center;
+	/* line-height: 행간=영역의 높이값(수직정렬) */
+	line-height: 30px;
+}
+nav li:hover {
+	background-color: #0a0;
+	/* transition : 동작 시간 */
+	transition : 1.2s;
+}
+nav a {
+/* 	border: 1px solid #0d0; */
+	width: 150px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+/* 1. 링크의 평상시 상태 (방문전 상태, 방문후 상태) */
+nav a:link, nav a:visited {
+	color: #fff;
+}
+/* 
+반드시 링크의 평상시 상태를 먼저 명시해야
+동작시 상태가 작동한다. 
+*/
+/* 2. 링크의 동작시 상태 (마우스 오버, 클릭시 상태) */
+nav a:hover, nav a:active {
+	color: #030;
+}
+
+/* 1. display: block; */
+.in {
+	border: 1px solid #00d;
+	width: 150px;
+	height: 50px;
+	margin: 30px;
+	display: block;
+}
+
+#sec01:hover>.in {
+	display:inline;
+}
+/* 2. display:inline; */
+.bl {
+	border: 1px solid #d00;
+	width: 150px;
+	height: 50px;
+	margin: 30px;
+	display: inline;
+}
+
+#sec02:hover>.bl {
+	display: block;
+}
+/* 3. display:inline-block; */
+/* 
+전체 선택자 * 는 태그 상관없이 모든 요소를 지정한다.
+부정 선택자 A:not(B)는 B를 제외한 A를 지정한다.
+*/
+#sec03>*:not(h2) {
+	border: 1px solid #0d0;
+	width: 150px;
+	height: 50px;
+	margin: 30px;
+	display: inline-block;	
+}
+
+#sec04, #sec05 {
+	display: inline-block;
+	width: 42%;
+	/* vertical-align : 수직정렬 */
+	vertical-align: top;
+}
+
+/* 4. display:none; 요소가 사라짐 */
+
+#sec04>h2>i {
+	background-color: #fa0;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+#sec04:hover>h2>i {
+	display: none;
+}
+
+#sec04>*:not(h2) {
+	border: 1px solid #880;
+}
+
+.dn01 {
+	background-color: #aa0;
+	display: none;
+}
+
+.dn02 {
+	background-color: #a0a;
+	display: none;	
+}
+
+#sec04:hover>.dn01 {
+	display: inline;
+}
+/* 
+A+B : 형제관계인 A의 바로 뒤에 있는 B만 지정
+A~B : 형제관계인 A의 뒤에 있는 B는 모두 지정 가능
+*/
+#sec04>span:hover~.dn02 {
+	display: block;
+}
+#sec04>label:hover+.dn02 {
+	display: block;
+}
+
+
+/* 5. visibility:hidden; */
+
+#sec05>*:not(h2) {
+	border: 1px solid;
+}
+
+#sec05:hover>.vs01 {
+		visibility: visible;
+}
+
+#sec05>label:hover+.vs02 {
+	visibility: visible;
+}
+.vs01 {
+	background-color: #0aa;
+	visibility: hidden;
+}
+.vs02 {
+	background-color: #aa0;
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+

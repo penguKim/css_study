@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding</title>
+<link href="style.css" rel="stylesheet">
+<link href="padding.css" rel="stylesheet">
+</head>
+<body>
+	<h1>padding - 요소의 내부 여백</h1>
+	
+	<h2>1. padding의 방향별 지정법</h2>
+	<ul>
+		<li>padding-top:n; 위쪽만 적용</li>
+		<li>padding-right:n; 우측만 적용</li>
+		<li>padding-bottom:n; 아래쪽만 적용</li>
+		<li>padding-left:n; 좌측만 적용</li>
+	</ul>
+	<h2>2. padding의 값 갯수별 지정법</h2>
+	<ul>
+		<li>padding-:n; 양사방 동일하게 적용</li>
+		<li>padding-:n n; 상하와 좌우가 서로 동일하게 적용</li>
+		<li>padding-:n n n; 상, 좌우, 하 순으로 적용</li>
+		<li>padding-:n n n n; 상,우,하,좌 순으로 적용</li>
+	</ul>
+	<section id="sec01">
+		<h2>1. padding의 방향별 지정법</h2>
+		
+		<div class="pt">padding-top: 30px;</div>
+		<div class="pr">padding-right: 20%;</div>
+		<div class="pb">padding-bottom: 2em;</div>
+		<div class="pl">padding-left: 10% </div>
+	</section>
+	<section id="sec02">
+		<h2>2. padding의 값 갯수별 지정법</h2>
+		<div class="pn01">padding:50px;</div>
+		<div class="pn02">padding: 50px 20%;</div>
+		<div class="pn03">padding: 50px 30% 10px;</div>
+		<div class="pn04">padding: 30px 30% 1em 10%;</div>
+	</section>
+	<section id="sec03">
+		<h2></h2>
+		<span>span</span>
+		<label>label</label>
+		<hr>
+		<img alt="" src="img/car.jpg" class="ph01">
+		<img alt="" src="img/car.jpg" class="ph02">
+		<img alt="" src="img/car.jpg" class="ph03">
+	</section>
+	
+</body>
+</html>

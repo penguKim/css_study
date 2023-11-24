@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet">
+<link href="display.css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#sec01">section-01</a></li>
+			<li><a href="#sec02">section-02</a></li>
+			<li><a href="#sec03">section-03</a></li>
+			<li><a href="#sec04">section-04</a></li>
+		</ul>
+	</nav>
+	<aside>
+		<h3>border-radius:n; 영역의 모서리 라운딩</h3>
+		<ul>
+			<li>border-radius:n; 양사방 같은 값</li>
+			<li>border-radius:n n; 좌측상단과 우측하단
+			우측상단과 좌측하단이 서로 같은 값</li>
+			<li>border-radius:n n n n; 좌층상단을 시작으로
+			시계방향으로 각각 다른 값</li>
+		</ul>
+	</aside>
+	<h1>display 요소가 화면에 나타나는 방식</h1>
+	<ol>
+		<li>
+			inline 요소의 특징<br>
+			한 줄에 나란히 옴. 크기 지정 불가. 상하여백 지정 불가.
+		</li>
+		<li>
+			block 요소의 특징<br>
+			한 줄에 나란히 올 수 없음. 크기 여백 모두 지정 가능
+		</li>
+	</ol>
+	<h2>display의 속성값</h2>
+	<ul>
+		<li>display:block; block의 성격으로 지정</li>
+		<li>display:inline; inline의 성격으로 지정</li>
+		<li>display:inline-block; inline과 block을 합친 성격으로 지정</li>
+		<li>display:none; 요소가 사라짐</li>
+	</ul>
+	
+	<section id="sec01">
+		<h2>1. display:block; block의 성격으로 지정</h2>
+		<a class="in">a tag</a>
+		<b class="in">b tag</b>
+		<span class="in">span tag</span>
+		<label class="in">label tag</label>
+	</section>
+	<section id="sec02">
+		<h2>2. display:inline; inline의 성격으로 지정</h2>
+		<aside class="bl">aside tag</aside>
+		<p class="bl">p tag</p>
+		<div class="bl">div tag</div>
+	</section>	
+	<section id="sec03">
+		<h2>3. display:inline-block;
+		inline과 block을 합친 성격으로 지정</h2>
+		
+		<a>a tag</a>
+		<b>b tag</b>
+		<span>span tag</span>
+		<label>label tag</label>
+
+		<aside>aside tag</aside>
+		<p>p tag</p>
+		<div>div tag</div>
+	</section>
+	<section id="sec04">
+		<h2>4. display:none; <i>페이지의 영역을 포함하여 </i>요소가 사라짐</h2>
+		
+		<a>a tag</a>
+		<b class="dn01">b tag</b>
+		<span>span tag</span>
+		<label>label tag</label>
+
+		<aside class="dn02">aside tag</aside>
+		<p>p tag</p>
+		<div>div tag</div>
+	</section>
+	<section id="sec05">
+		<h2>5. visibility:hidden; 요소가 사라짐</h2>
+		
+		<a>a tag</a>
+		<b class="vs01">b tag</b>
+		<span>span tag</span>
+		<label>label tag</label>
+
+		<aside class="vs02">aside tag</aside>
+		<p>p tag</p>
+		<div>div tag</div>
+	</section>
+</body>
+</html>

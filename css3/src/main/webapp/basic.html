@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS basic</title>
+<link href="basic.css" rel="stylesheet">
+<style type="text/css">
+	li {
+		margin-bottom: 1.2em;
+		padding: 1em;
+	}
+	
+	#in {background-color: #0f9;}
+	
+	.hn-2 {
+		border-bottom: 3px dashed #335;
+		margin-top: 2em;
+		color: #557;
+	}
+</style>
+</head>
+<body>
+	<h1 class="hn-2">CSS basic</h1>
+	<h2>CSS 문법</h2>
+	<p>선택자 {속성:속성값;}</p>
+	
+	<h2 class="hn-2">CSS 적용방식 3가지</h2>
+	<ul>
+		<li id="ex">
+			External CSS - 외부파일방식. 스타일소스를 웹문서와 별개로 만들어 연결하는 형태로 적용<br>
+			통일된 스타일 가능, 유지보수 용이
+		</li>
+		<li id="in">
+			Internal CSS - 내장방식. 스타일소스를 웹문서의 head안에 만들어 적용<br>
+			웹문서에 종속 됨.(해당 페이지에만 적용)
+		</li>
+		<li style="background-color: #f90;">
+			Inline CSS - 인라인방식. 스타일소스를 태그 뒤에 직접 적용<br>	
+			소스가 길어져 유지보수에 불리하고, 통일성 있는 사이트 구축이 어려우나 CSS적용 우선순위가 가장 높음<br>
+			개발환경이 본문만 수정 가능할 때 사용
+		</li>
+	</ul>
+	<h2 class="hn-2">대표 선택자 3가지</h2>
+	<ul>
+		<li id="s-t">
+			태그 선택자 - 태그 그대로를 선택자로 활용. 자동적용, 강제적용
+		</li>
+		<li id="s-i">
+			id 선택자 - id를 선택자(#id)로 활용. 중복적용이 불가능하며 주로 구조적 목적에 쓰임
+		</li>
+		<li id="s-c">
+			class 선택자 - class를 선택자(.class)로 활용. 중복적용과 조합이 가능하며 주로 디자인적 목적에 쓰임
+		</li>
+	</ul>
+</body>
+</html>
