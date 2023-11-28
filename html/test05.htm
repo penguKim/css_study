@@ -1,0 +1,84 @@
+﻿<html>
+ <head>
+  <title>a로 링크 걸기</title>
+ </head>
+ <body>
+ <hr>
+  <nav>
+  <a href="test05.htm">링크-1</a>
+  <a href="test05-1.htm">링크-2</a>
+  </nav>
+ <hr>
+ <br><br><br><br>
+ <h1>a로 링크 걸기</h1>
+ <p>&lt;a href="경로"&gt; ... &lt;/a&gt;<br>
+ 링크 걸린 ... 글자는 밑줄이 생기고 마우스 오버시 커서가 손모양으로 바뀌고
+ 색상은 세가지 중 하나로 나타남<br>
+ (초기링크=파랑/활성화링크=빨강/방문한링크=보라)
+ </p>
+
+ <ol>
+  <li>절대경로로 링크 걸기 - 
+  <a href="https://www.naver.com/" target="_blank">naver</a>
+  <a href="https://www.daum.net/" target="_blank">다음</a>
+  <a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a></li>
+  <li>상대경로로 링크 걸기 -   
+   <ul>
+    <li>웹문서 (*.htm/*.html) <a href="test01.htm">html-1</a>
+    <a href="test02.htm">html-2</a></li>
+    <li>이미지파일 (*.gif/*.jpg/*.png)
+    <a href="img/apple.jpg" target="_blank">사과</a>
+    <a href="img/car.jpg" target="_blank">photo</a>
+    </li>
+    <li>동영상파일 (*.ogg/*.mp4/*.webm)
+    <a href="sea.mp4" target="_blank">sea동영상</a>
+    </li>
+    <li>텍스트파일 (*.txt)
+    <a href="text.txt" target="_blank">text파일</a>
+    </li>
+   </ul>
+  </li>
+ </ol>
+
+ <h3 id="wd">웹브라우저가 지원하지 않는 종류 링크시 = 다운로드 됨</h3>
+ <a href="text.zip" target="_blank">압축파일</a>
+
+ <h4>[문제] daum로고 이미지 클릭시 daum으로 이동하는 링크 걸기</h4>
+ <a href="https://www.daum.net/" target="_blank">
+  <img src="img/png/daumlogo.png" alt="daum" width="120">
+ </a>
+ 
+ 
+ 
+ <h2>썸네일 이미지 활용</h2>
+  <a href="img/milkyway.jpg" target="_blank">
+   <img src="img/milkyway.jpg" alt="thum01" width="100"></a>
+  <a href="img/flower.jpg" target="_blank">
+   <img src="img/flower.jpg" alt="thum02" width="100"></a>
+  <a href="img/mountain.jpg" target="_blank">
+   <img src="img/mountain.jpg" alt="thum03" width="100"></a>
+ <hr>
+ <h2>target 속성으로 링크를 여는 방식 지정</h2>
+  <ul>
+   <li>target="_self" 기본값. 현재 자리에 링크를 열어줌</li>
+   <li><b>target="_blank"</b> 새탭에 링크를 열어줌</li>
+   <li>target="_top" (프레임 구조에서) 나뉨없이 하나로 링크를 열어줌</li>
+   <li>target="_parent" (프레임 구조에서) 상위(부모)창에 열어줌</li>
+  </ul>
+ <br><br><br><br><br>
+ <hr>
+ <h2>mailto:으로 이메일링크 걸기</h2>
+  <a href="mailto:class@itwillbs.co.kr">class@itwillbs.co.kr</a>
+ <br><br><br><br><br>
+
+
+
+
+
+
+  <hr>
+  <h3>top 링크 걸기</h3>
+  <p>#으로 페이지 최상단으로 이동하는 링크<br>
+  <a href="#">top</a></p>
+ </body>
+</html>

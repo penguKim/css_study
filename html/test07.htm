@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>iframe - 웹페이지안의 또다른 웹페이지</title>
+ </head>
+ <body>
+ <hr>
+ <h1>iframe</h1>
+ <hr>
+  <p>&lt;iframe src="내용의 경로"&gt;...&lt;/iframe&gt;<br>
+  src속성으로 내용을 지정하고<br>
+  width="n", height="n"로 가로/세로 크기를 지정
+  </p>
+  
+  <h2>iframe안에 불러올 수 있는 종류</h2>
+   <h3>1. 웹주소(URL)</h3>
+  <iframe src="https://www.daum.net">iframe 미지원 브라우저 사용자용 메세지</iframe>
+  <h3>2. 웹문서</h3>
+  <iframe src="test06.htm" width="800" height="600"></iframe>
+  <h3>3. 이미지파일</h3>
+   <iframe src="img/code.jpg" width="700" height="500"></iframe>
+   <h3>4. 동영상파일</h3>
+  <iframe src="sea.mp4" width="600" height="500"></iframe>
+   <h3>5. 텍스트파일</h3>
+  <iframe src="text.txt" width="700" height="500"></iframe>
+  <hr>
+  <h2>iframe안에 링크 열기</h2>
+  <p>iframe에는 <b>name</b>의 값을,<br>
+   a에는 <b>target</b>의 값을 서로 일치시켜 줌
+  </p>
+  <iframe src="test01.htm" width="800" height="600" name="htmlBox"></iframe>
+  <nav>
+   <a href="test01.htm" target="htmlBox">html-01</a>
+   <a href="test02.htm" target="htmlBox">html-02</a>
+   <a href="test03.htm" target="htmlBox">html-03</a>
+   <a href="test04.htm" target="htmlBox">html-04</a>
+   <a href="test05.htm" target="htmlBox">html-05</a>
+   <a href="test06.htm" target="htmlBox">html-06</a>
+  </nav>
+  <h4>iframe안에 링크 열기(이미지)</h4>
+  <iframe src="img/apple.jpg" width="600" height="400" name="images"></iframe><br>
+   <nav>
+    <a href="img/apple.jpg" target="images">photo01</a>
+    <a href="img/car.jpg" target="images">photo02</a>
+    <a href="img/code.jpg" target="images">photo03</a>
+  </nav>
+
+
+
+
+ </body>
+</html>
