@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/* 전체를 대상으로 하는 html 태그에 적용 */
+html {
+	/* 퀵링크 이동시 스크롤을 부드럽게 이동 */
+	scroll-behavior:smooth;
+}
+
 section>div {
 	border: 1px solid;
 }
@@ -174,12 +180,55 @@ section>i {
 	transition: 1s;
 }
 
+/* 4. position:fixed; */
 
+/* section은 기본 마진이 있어서 nav로 지정해서 여백없이 붙인다. */
+#sec04 nav {
+	border-left: 14px solid #d30;
+	position: fixed;
+	/* 오른쪽 거리없음: 오른쪽에 붙어있음 */
+/* 	right:0; */
+	right:-136px; /* 오른쪽으로 숨김 */
+	bottom: 0; /* 아래쪽 거리없음: 아래쪽에 붙어있음 */
+	box-sizing:border-box;
+	width: 150px;
+	background-color: #024;
+}
 
+#sec04>nav:hover {
+	right: 0;
+	transition: 0.5s;
+}
 
+#sec04 ul {
+	list-style: none;
+	padding-left: 12px;
+}
+/* 1. 링크의 평상시 상태 (방문전 상태, 방문후 상태) */
+#sec04 ul a:link, #sec04 ul a:visited {
+	text-decoration: none;
+	color:#fff;
+}
+/* 
+반드시 링크의 평상시 상태를 먼저 명시해야
+동작시 상태가 작동한다. 
+*/
+/* 2. 링크의 동작시 상태 (마우스 오버, 클릭시 상태) */
+#sec04 ul a:hover, #sec04 ul a:active {
+	color:#ff0;
+}
 
-
-
+/* 엑셀의 틀 고정 같은 역할 */
+/* sticky 요소가 body 제외한 상위요소 안에 있으면 적용 불가 */
+/* 5. position:sticky; */
+#sec05 {
+	position: sticky;
+	top: 0;
+	/* 색상의 불투명도 지정 rgba(n,n,n,n)
+	   a는 0 ~ 1 사이의 값 */
+	background-color: rgba(255,255,255,0.8);
+	z-index: 9999;
+}
 
 
 
