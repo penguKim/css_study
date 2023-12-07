@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* 
+반응형은 모바일 우선이 원칙 
+큰 화면을 만들고 작게 만드는것 보다
+작은 화면을 만들고 크게 만드는것이 쉽다.
+*/
+
+body {
+	background-color: #48f;
+	color: #004;
+}
+
+h1 {
+	color: #ccf;	
+}
+
+.clear {
+	clear: both;
+}
+
+/* 일반적으로 장치 유형은 screen을 많이 사용한다. */
+@media screen and (min-width:760px) { /* 표현식의 조건은 ;을 안쓴다. */
+	body {
+	background-color: #4f8;
+	color: #040;
+	}
+	
+	h1 {
+		color: #cfc;	
+	}
+	
+	#dv01, #dv02 {
+		border: 1px solid #ccc;
+		float:left;
+		width:45%;
+		margin-left: 2%;
+	}
+	
+	
+}
+
+@media screen and (min-width:1000px) {
+	body {
+		background-color: #f84;
+		color: #400;
+	}
+	
+	h1 {
+		color: #fcc;	
+	}
+
+/* 하나의 장치유형만 사용할거면 only
+사용하지 않을거면 not을 명시한다. */
+/* 인쇄 페이지로 들어가면 print 장치유형의 조건으로 변한다. */
+@media only print {
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+	
+	h1 {
+		color: #000;	
+	}
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
