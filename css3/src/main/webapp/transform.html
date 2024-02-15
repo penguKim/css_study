@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet">
+<link href="transform.css" rel="stylesheet">
+</head>
+<body>
+	<h1>transform - 변형</h1>
+	
+	<h2>변형함수</h2>
+	<ul>
+		<li>transform: translate(); 위치 변형</li>
+		<li>transform: scale(); 크기 변형</li>
+		<li>transform: rotate(); 회전 변형</li>
+		<li>transform: skew(); 기울기 변형</li>
+	</ul>
+	
+	<section id="sec01">
+		<h2>transform: translate(Xn,Yn); 위치 변형</h2>
+		<p>Xn,Yn은 양수일 때 우측,아래 음수일 때 좌측,위로 이동</p>
+		
+		<div class="tr01">transform: translateX(1200px);</div>
+		<div class="tr02">transform: translateY(100px);</div>
+		<div class="tr03">transform: translateX(-500px);</div>
+		<div class="tr04">transform: translateY(-200px);</div>
+		<div class="tr05">transform: translate(1000px, -200px);</div>
+		<div class="tr06">transform: translate(100%,100%);</div>
+		
+		<aside class="cnt">
+			[center]
+			
+			1. position: absolute;<br>
+			(상위요소는 position:relative;)<br>
+			left: 50%; top: 50%;<br>
+			--- 상위요소의 정중앙에서 시작<br>
+			2. transform: translate(-50%, -50%);<br>	
+			--- 해당요소의 절반만큼 앞, 위로 이동
+		</aside>
+	</section>
+	<section id="sec02">
+		<h2>2. transform: scale(Xn,Yn); 크기 변형</h2>
+		<p>Xn, Yn은 1을 기준으로 1보다 작으면 축소, 크면 확대</p>
+		
+		<div class="sc01">transform: scaleX(0.5);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sc02">transform: scaleX(2);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sc03">transform: scaleY(0.3);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sc04">transform: scaleY(2);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sc05">transform: scale(0.2,0.2);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sc06">transform:scale(2,2);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+	</section>
+	<section id="sec03">
+		<h2>3. transform:rotate(ndeg); 회전 변형</h2>
+		<p>rotateX, rotateY는 3차원 변형.<br>
+			각도 단위 deg를 쓰고 음수도 가능.  </p>
+		
+		<div class="ro01">transform:rotateX(80deg);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="ro02">transform:rotateY(90deg);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="ro03">transform:rotateX(180deg);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="ro04">transform:rotateY(180deg);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="ro05">transform:rotate(-540deg)<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="ro06"><b>transform: rotate();</b><br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+	</section>
+	<section id="sec04">
+		<h2>4. transform:skew(ndeg); 기울기 변형</h2>
+		<p>각도 단위 deg를 쓰고 음수도 가능.</p>
+		
+		<div class="sk01">transform: skewX(30deg);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sk02">transform: skewX(-30deg);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sk03">transform: skewY(30deg);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sk04">transform: skewY(-30deg);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sk05">transform: skew(35deg,35deg);<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="sk06"><b>transform: skew();</b><br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+	</section>
+	<section id="sec05">
+		<h2>5. transform-origin:X Y; 변형의 기준점 변경</h2>
+		<p>각도 단위 deg를 쓰고 음수도 가능.</p>
+	
+		<div class="to01">transform-origin: ;<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="to02">transform-origin: ;<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+		<div class="to03">transform-origin: ;<br>
+			<img alt="" src="img/pineapple.jpg">		
+		</div>
+	</section>
+</body>
+</html>

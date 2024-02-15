@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>animation</title>
+<link href="style.css" rel="stylesheet">
+<link href="animation.css" rel="stylesheet">
+</head>
+<body>
+ <h1>animation</h1>
+ 
+ <h2>@keyframes으로 animation정의하기</h2>
+  <p class="pre">
+   @keyframes 애니명 {
+      0% {속성:속성값;}
+       ...
+    100% {속성:속성값;}
+   }
+  </p>
+  
+  <label for="ch-btn" class="la-btn">play/stop</label>
+  <input type="checkbox" id="ch-btn">
+  
+<div id="text-box" class="bgch"> 
+ <h2>animation의 하위속성들 </h2>
+ <ul> 
+  <li>animation-name: ; (필수)애니메이션 이름</li>
+  <li>animation-duration:ns/nms; (필수)애니메이션 진행시간</li>
+  <li>animation-delay:ns/nms; 지연 시간</li>
+  <li>animation-iteration-count:n/infinite(무한반복);
+   애니메이션 반복횟수</li>
+  <li>animation-direction: ; 애니메이션 진행방향
+   <ul>
+    <li>normal 정방향(0%~100%)</li>
+    <li>reverse 역방향(100%~0%)</li>
+    <li>alternate 왕복(2회 이상 반복시 0%~100%~0%)</li>
+    <li>alternate-reverse(2회 이상 반복시 100%~0%~100%)</li> 
+   </ul>
+  </li>
+  <li>animation-timing-function: ; 가속 감속 등
+   <ul>
+    <li>ease 기본값. 천천히 시작하고 느리게 끝남.</li>
+    <li>ease-in 시작을 느리게</li>
+    <li>ease-out 끝을 느리게</li>
+    <li>ease-in-out 시작과 끝을 느리게</li>
+    <li>linear 등속</li>
+    <li>cubic-bezier(n,n,n,n) 베지에곡선값을 이용
+     cubic-bezier.com 생성기 사이트    </li>
+   </ul>  
+  </li>
+  <li>animation-fill-mode: ; 애니메이션 멈춤시 보일 장면
+   <ul>
+    <li>none 기본값.</li>
+    <li>forwards 마지막 키프레임 설정값</li>
+    <li>backwards 첫 번째 키프레임 설정값</li>
+    <li>both 양방향</li>
+   </ul> 
+  </li>
+ </ul>
+ 
+ <h2>animation-play-state:running/paused;</h2>
+   애니메이션 진행/멈춤
+
+</div>
+
+<section id="sec01">
+ <h2>animation-direction: ; 애니메이션 진행방향</h2>
+
+ <div class="box ani01">box</div>
+ <div class="box ani02">delay:2s;</div>
+ <div class="box ani03">iteration-count:4;</div>
+ <div class="box ani04">direction:alternate;</div>
+ <div class="box ani05">direction:reverse;</div>
+ <div class="box ani06">direction:alternate-reverse;</div>
+</section> 
+
+<section id="sec02">
+ <h2>animation-fill-mode: ; 애니메이션 멈춤시 보일 장면</h2>
+
+ <div class="box ani07">none</div>
+ <div class="box ani08">forwards</div>
+ <div class="box ani09">backwards</div>
+ <div class="box ani10">both</div>
+</section> 
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

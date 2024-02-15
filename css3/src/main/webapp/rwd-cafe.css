@@ -1,2 +1,243 @@
 @charset "UTF-8";
+/* mobile first */
+/* 
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Single Day', cursive;
+ */
+
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+html {
+	/* 스크롤을 부드럽게 한다. */
+	scroll-behavior: smooth;
+}
+ 
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+ 
+a {
+	text-decoration: none;
+}  
+
+nav a:link, nav a:visited {
+	color: #fff;
+}  
+nav a:hover, nav a:active {
+	color: #ff0;
+} 
+ 
+h2 {
+	font-size: 1.8em;
+	font-family: 'Single Day', cursive !important;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+p {
+	font-size: 1.3em;
+/* 행간격 설정 */
+ 	line-height: 2.5;
+}
+
+li {
+	font-size: 1em;
+	line-height: 2;
+}
+ 
+#wrap {
+	border: 1px solid red;
+	margin: 0 auto;
+} 
+
+header{
+	background-image: url("img/header.jpg");
+/* 	왼쪽을 기준으로 백그라운드 정렬 */
+	background-size: cover;
+/* 	이미지를 정중앙으로 맞춤 */
+	background-position: center center;
+	height: 300px;
+}
+
+nav {
+	background-color: #000;
+	height: 50px;
+	padding: 10px;
+}
+
+nav ul {
+
+	list-style: none;
+	
+}
+
+nav li {
+	display: inline-block;
+	margin: 5px 15px;
+	font-family: 'Nanum Myeongjo', serif;
+	font-size: 0.8em;
+}
+
+section {
+/* 	border: 1px solid #0fa; */
+	padding: 15px 5% 15px 5%;
+/* 	부모 요소가 position: relative 여야 자식 요소가 기준으로 잡는다. */
+	position: relative;
+}
+
+/* 짝수 section만 선택한다. */
+section:nth-of-type(2n) {
+	background-color: #eee;
+}
+
+.pg-title {
+	border: 1px solid #fa0;
+/* 	부모 요소 기준으로 거리를 정한다. */
+	position: absolute;
+	top: 20px;
+	left: 0;
+	padding: 30px 50px;
+}
+
+.content {
+	border: 1px solid #fa0;
+	width: 90%;
+	margin: 80px auto 10px;
+	padding: 20px;
+/* 	테두리와 padding 설정값까지 포함해서 영역이 지정되므로 */
+/* 	합쳐서 width의 값이 90%로 설정된다 */
+	box-sizing: border-box;
+}
+
+.photo {
+/* 	영역을 사라지게 한다. */
+	display: none;
+}
+
+.text>h3 {
+	margin-bottom: 20px;
+	color: #0094ff;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+	height: 100px;
+}
+
+footer>p {
+	text-align: center;
+/* 	영역의 높이와 행간의 높이를 일치시켜서 수직 가운데 정렬 */
+	line-height: 100px;
+	font-size: 1.8em;
+	font-family: 'Single Day', cursive;
+	text-transform: capitalize;
+}
+
+.icn {
+	color: #520;
+	font-size: 22px !important;
+}
+
+.text>button {
+	border: none;
+	background-color: #042;
+	color: #fff;
+	padding: 6px;
+	border-radius: 24px 6px;
+}
+.text>button:hover {
+	background-color: #884;
+	color: #042;
+}
+
+/* tablet - 768px */
+/* 소괄호() 안에는 ;을 넣지 않는다. */
+@media screen and (min-width:768px) {
+	
+	header{
+		height: 400px;
+	}
+	
+	#intro, #map {
+		border: 1px dotted #ccc;
+		float: left;
+		width: 50%;
+		height: 400;
+		/* 
+		요소의 크기 계산시 테두리까지 포함
+		(border나 padding이 추가되어도
+		실제 차지하는 영역이 늘어나지 않는다.
+		*/
+		box-sizing: border-box;
+	}
+	
+	.clear {
+		clear: both;
+	}
+	/* 	#choice { */
+	/* 		clear: both; */
+	/* 	} */
+}
+
+@media screen and (min-width:992px) {
+	#wrap{
+		width: 995px;
+	}
+	
+	header{
+		height: 500px;
+	}
+	
+	section {
+	/* 
+	section 안에있는 #intro, #map의 height: 400px;의
+	우선순위가 더 높기 때문에 !important를 적용한다.
+	 */
+		height:420px !important;
+	}
+	
+	#intro, #map {
+		width: 100%;
+	}
+	
+	.photo{
+		border: 1px solid #0fa;
+		display: block;
+		float: left;
+		width: 42%;
+		margin-right: 5%;
+	}
+	
+	.photo>img {
+		width: 100%;
+		/* 원본 이미지보다 더 커지지 않게 설정 */
+		max-width: 320px;
+		height: auto;
+	}
+	
+	.text {
+		border: 1px solid #0fa;
+		float: left;	
+		width: 42%
+	}
+	
+	#choice .photo, #choice .text {
+		float: right;
+	}
+	
+	#choice .photo {
+		margin-left: 5%;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	
+}
+
 

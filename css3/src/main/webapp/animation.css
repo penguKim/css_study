@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+.pre {white-space: pre; 
+
+ animation:bgcl 4s forwards;
+}
+
+@keyframes bgcl {
+	0% {background-color:#f40; }
+   50% {background-color:#4f0; }
+  100% {background-color:#ff8; }
+}
+
+
+#text-box {padding: 2em;	
+ background-image: url("img/basile.jpg");
+ background-repeat: no-repeat;
+ background-size: cover; 
+ background-position: center center; 
+}
+
+.bgch {
+ animation:bgimg 25s infinite ease-out;	}
+
+.bgch:hover {
+animation-play-state:paused; } 
+
+#ch-btn:checked+.bgch {
+animation-play-state:paused;	
+}
+
+
+@keyframes bgimg {
+   0% {background-image: url("img/basile.jpg");}	
+  20% {background-image: url("img/basile.jpg");}
+  25% {background-image: url("img/butterfly.jpg");}  
+  45% {background-image: url("img/butterfly.jpg");}  
+  50% {background-image: url("img/cat.jpg");}
+  70% {background-image: url("img/cat.jpg");}
+  75% {background-image: url("img/mayweed.jpg");}
+  95% {background-image: url("img/mayweed.jpg");}
+ 100% {background-image: url("img/basile.jpg");}	
+}
+
+.box {width: 100px; height:100px; 
+ background-color:#ff8;
+ display: inline-block;
+ margin: 30px;
+ text-transform: capitalize;
+ text-align: center;
+ line-height:100px;  
+ white-space: nowrap;}
+
+@keyframes cir {
+	0% {background-color:#ff8;
+	transform:scale(1,1);
+	border-radius:0;
+	}	
+	
+ 100% {background-color:#048;
+ 	transform:scale(1.5,1.5);  	
+ 	border-radius:50%;
+ 	}
+}
+
+#sec01:hover>.ani01 {
+animation-name:cir;
+animation-duration:4s;}
+
+#sec01:hover>.ani02 {
+ animation-name:cir;
+animation-duration:4s;
+animation-delay:2s;}
+
+#sec01:hover>.ani03 {
+animation-name:cir;	
+animation-duration:4s;
+animation-iteration-count:4;}
+
+#sec01:hover>.ani04 {
+animation-name:cir;	
+animation-duration:4s;
+animation-iteration-count:4;
+animation-direction:alternate; }
+
+#sec01:hover>.ani05 {
+animation-name:cir;	
+animation-duration:4s;
+animation-iteration-count:4;
+animation-direction:reverse; }
+
+#sec01:hover>.ani06 {
+animation-name:cir;	
+animation-duration:4s;
+animation-iteration-count:4;
+animation-direction:alternate-reverse; }
+
+
+ /* animation-fill-mode: ; */
+ 
+#sec02:hover>div {
+animation-name:cir;	
+animation-duration:4s;
+animation-iteration-count:4;}
+ 
+#sec02:hover>.ani07 {
+animation-fill-mode:none;}
+#sec02:hover>.ani08 {
+animation-fill-mode:forwards;}
+#sec02:hover>.ani09 {
+animation-fill-mode:backwards;}
+#sec02:hover>.ani10 {
+animation-fill-mode:both;}

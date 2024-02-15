@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+.css {background-color: #0d9;
+width: 100px; height: 50px;
+padding: 10px;
+box-sizing: border-box;
+border-radius:5px;
+font-size: 18px;
+font-weight: bold;
+text-transform:uppercase;
+color: #fff; }
+
+.css:hover {background-color: #09d;
+width: 200px; height: 100px;
+padding: 20px;
+border-radius:10px;
+font-size: 36px;
+transition-property:background-color,font-size ;
+transition-duration: 3s,1s;
+transition-delay:0s,2s;
+/* transition:
+background-color 3s 0s, font-size 1s 2s; */
+}
+
+
+ /* transition-timing-function */
+#sec01 {height: 500px;} 
+
+#sec01 li {background-color:#ccc;
+border-bottom:12px solid #059;
+width: 150px; height: 40px;
+box-sizing: border-box;
+display:inline-block; 
+vertical-align:top ;
+margin-right: 30px;
+padding: 5px;}
+
+#sec01:hover li {
+ height: 420px;	 
+transition:5s ; }  
+
+#sec01:hover .tt01 {
+	transition-timing-function:ease;}
+#sec01:hover .tt02 {
+	transition-timing-function:ease-in;}
+#sec01:hover .tt03 {
+	transition-timing-function:ease-out;}
+#sec01:hover .tt03 {
+	transition-timing-function:ease-in-out;}
+#sec01:hover .tt04 {
+	transition-timing-function:linear;}
+#sec01:hover .tt06 {
+	transition-timing-function:
+cubic-bezier(.17,.67,.83,.67);}
+
+#sec01:hover .tt07 {
+	transition-timing-function:
+cubic-bezier(1,0,.35,1.54);}
+
+#sec01:hover .tt08 {
+	transition-timing-function:
+cubic-bezier(.27,2.03,1,-1.11);}
+
+
+
+h3 {margin-top: 2em;	
+	letter-spacing: -0.2em
+ /* 자간 */;
+ word-spacing: 0.2em
+ /* 띄어쓰기 */;}
+
+ /* 말줌임표 삼총사 */
+.txt {border: 1px solid;
+width: 250px; 
+
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;}
+
+.txt:hover {
+width: 600px; 	
+transition:1.5s linear;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

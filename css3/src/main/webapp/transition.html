@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+<link href="style.css" rel="stylesheet">
+<link href="transition.css" rel="stylesheet">
+</head>
+<body>
+<h1>transition 단순한 애니메이션 효과</h1>
+<div class="css">css</div>
+<ul>
+ <li>transition-property: ; 적용할 속성</li>
+ <li>transition-duration: ; (필수) 진행 시간</li>
+ <li>transition-delay: ; 지연 시간</li>
+ <li>transition-timing-function: ; 
+  가속 감속 등  
+  <ol>
+   <li>ease 기본값. 천천히 시작하고 느리게 끝남. </li>
+   <li>ease-in 시작을 느리게</li>
+   <li>ease-out 끝을 느리게</li>
+   <li>ease-in-out 시작과 끝을 느리게</li>
+   <li>linear 등속</li>   
+   <li>cubic-bezier(n,n,n,n) 베지에곡선값을 이용<br>
+    <a href="https://cubic-bezier.com/" target="_blank">
+    cubic-bezier.com 생성기 사이트</a> 
+   </li>
+  </ol>
+ </li>
+</ul>
+
+<section id="sec01">
+ <h2>transition-timing-function: ; 가속 감속 등</h2>
+
+  <ul>
+   <li class="tt01">ease</li>
+   <li class="tt02">ease-in</li>
+   <li class="tt03">ease-out</li>
+   <li class="tt04">ease-in-out</li>
+   <li class="tt05">linear</li>   
+   <li class="tt06">cubic-bezier(.17,.67,.83,.67)</li>
+   <li class="tt07">cubic-bezier(1,0,.35,1.54)</li>
+   <li class="tt08">cubic-bezier(.27,2.03,1,-1.11)</li>
+  </ul>
+
+</section>
+
+<h3>★ 말줌임표 삼총사 ★ </h3>
+<p class="txt">영역 안의 글자가 넘칠 때 자동으로 말줄임표가 나타남. </p>
+<ul>
+ <li>white-space: nowrap; 자동 줄바꿈 금지</li>
+ <li>overflow: hidden; 영역 밖의 내용 숨김</li>
+ <li>text-overflow: ellipsis; 말줌임표(...) 표시</li>
+</ul>
+
+<h3>글자 간격 속성들</h3>
+<ul>
+ <li>letter-spacing:n; 문자 간격(자간) 지정. 음수 가능</li>
+ <li>word-spacing:n; 단어 간격(띄어쓰기) 지정</li>
+</ul>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
